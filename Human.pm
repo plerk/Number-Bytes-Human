@@ -361,7 +361,7 @@ print STDERR Dumper( %suffix_block );
     return undef;
   }
 
-  my $bytes = int( ($int + ($frac / $block)) * $mult );
+  my $bytes = "$int.$frac"*$mult;
 
   return $bytes;
 }
